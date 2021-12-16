@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White to Dark Theme</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="bannerText">
+            <h2>White To Dark Theme</h2>
+            <p>Explore the must-have Podcasting features of Tusant.<br> A sleek & powerful WordPress Podcast Theme.</p>
+            <button>Contact Us</button>
+            <button>Book Now</button>
+        </div>
+        <div class="themeBtn">
+            <i class="fa fa-cog" aria-hidden="true" onclick="changeTheme()" id="settinIcon"></i>
+        </div>
+    </section>
+
+
+    <script>
+        function changeTheme()
+        {
+            document.getElementById("header").classList.toggle("black");
+            document.getElementById("banner").classList.toggle("black");
+            document.getElementById("settinIcon").classList.toggle("black");
+        }   
+    </script>
+</body>
+</html>
